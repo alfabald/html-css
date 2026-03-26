@@ -12,7 +12,26 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+
+        thead > tr > th {
+           position: sticky;
+           top: 0;
+          background-color: gray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        
 
         td, th {
             border: 1px solid black;
@@ -35,6 +54,7 @@
     <!--
     Anatomia pra tabelas grandes
     TABLE= tabela
+    CAPTION
          THEAD
          TR, TD, TH
          TBODY
@@ -43,10 +63,11 @@
          TR, TD, TH
 -->
     <table>
+    <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -121,12 +142,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>211.186.790</strong></td>
 
             </tr>
         </tfoot>
 
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium magni, architecto dolor recusandae atque, consequatur velit rerum deleniti maxime adipisci enim necessitatibus. Ea voluptates qui et, quo sint officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, excepturi possimus cum praesentium, doloremque eveniet molestiae, enim iusto quae qui officiis voluptate sequi fuga ipsum. Omnis suscipit deserunt atque maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque corrupti. Soluta eveniet deserunt eligendi vel, officiis eius inventore adipisci minus laudantium harum repellendus eum quibusdam quae? Quisquam, repellat tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium magni, architecto dolor recusandae atque, consequatur velit rerum deleniti maxime adipisci enim necessitatibus. Ea voluptates qui et, quo sint officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, excepturi possimus cum praesentium, doloremque eveniet molestiae, enim iusto quae qui officiis voluptate sequi fuga ipsum. Omnis suscipit deserunt atque maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque corrupti. Soluta eveniet deserunt eligendi vel, officiis eius inventore adipisci minus laudantium harum repellendus eum quibusdam quae? Quisquam, repellat tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium magni, architecto dolor recusandae atque, consequatur velit rerum deleniti maxime adipisci enim necessitatibus. Ea voluptates qui et, quo sint officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, excepturi possimus cum praesentium, doloremque eveniet molestiae, enim iusto quae qui officiis voluptate sequi fuga ipsum. Omnis suscipit deserunt atque maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque corrupti. Soluta eveniet deserunt eligendi vel, officiis eius inventore adipisci minus laudantium harum repellendus eum quibusdam quae? Quisquam, repellat tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium magni, architecto dolor recusandae atque, consequatur velit rerum deleniti maxime adipisci enim necessitatibus. Ea voluptates qui et, quo sint officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, excepturi possimus cum praesentium, doloremque eveniet molestiae, enim iusto quae qui officiis voluptate sequi fuga ipsum. Omnis suscipit deserunt atque maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, neque corrupti. Soluta eveniet deserunt eligendi vel, officiis eius inventore adipisci minus laudantium harum repellendus eum quibusdam quae? Quisquam, repellat tempora!</p>
 </body>
 </html>
