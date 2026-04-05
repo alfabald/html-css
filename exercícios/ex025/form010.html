@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 010</title>
+</head>
+<body>
+    <h1>Formulário 010</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iano"> Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" required oninput="calcularIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output name="idade" id="idade">24</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcularIdade() {
+            const anoNascimento = document.getElementById('iano').value;
+            const idade = 2024 - Number(anoNascimento);
+            document.getElementById('idade').innerHTML = idade;
+        }
+    </script>
+    
+</body>
+</html>

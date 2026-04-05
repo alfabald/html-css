@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 007</title>
+</head>
+<body>
+    <h1>Formulário select, datalist e textarea</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>Selecione um estado</option>
+                <optgroup label="Região Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="pe">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="profissao" id="iprof" list="lstprof" placeholder="Digite sua profissão">
+            <datalist id="lstprof">
+                <option value="adm">Administrador</option>
+                <option>Engenheiro</option>
+                <option value="med">Médico</option>
+                <option value="prof">Professor</option>
+                <option >Contador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="mensagem" id="imsg" rows="10" cols="50"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+ <!-- <form action="cadastro.php" method="post">
+        <p>
+            <label for="iselect">Selecione uma opção:</label>
+            <select name="iselect" id="iselect">
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+        </p>
+        <p>
+            <label for="idatalist">Digite um valor:</label>
+            <input type="text" name="idatalist" id="idatalist" list="datalist">
+            <datalist id="datalist">
+                <option value="valor1">
+                <option value="valor2">
+                <option value="valor3">
+            </datalist>
+        </p>
+        <p>
+            <label for="itextarea">Digite seu texto:</label>
+            <textarea name="itextarea" id="itextarea" rows="4" cols="50"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form> -->
