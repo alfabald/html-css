@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 006</title>
+</head>
+<body>
+    <h1>Formulário  Elementos color, range e file</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icolor">Cor Favorita:</label>
+            <input type="color" name="icolor" id="icolor" value="#00ff00">
+        </p>
+        <p>
+            <label for="irange">Valor entre 0 e 100:</label>
+            <input type="range" name="irange" id="irange" min="0" max="100">
+        </p>
+        <p>
+            <label for="ifile">Foto de Perfil:</label>
+            <input type="file" name="ifile" id="ifile">
+        </p>
+        <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+</body>
+</html>
