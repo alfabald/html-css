@@ -76,7 +76,24 @@ div.media > img {
 div.media > iframe {
     display: block;
     margin: auto;
-   width: 90%;
-   border-radius: 10px;
+    width: 90%;
+    border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(71, 137, 168, 0.637);
 }
+
+  footer {
+    background-color: rgb(163, 116, 207);
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    
+    
+    text-align: center;
+        }
+
+        footer a {
+           
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
