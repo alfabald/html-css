@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    grid-template: repeat(4, 100px) / repeat(3, 1fr);
+    /* gap: 5px; */
+    grid-auto-rows: 100px;
+    grid-auto-columns: 150px;
+    grid-auto-rows: ;
+}
+
+.caixa1 {
+    background-color: rgb(68, 108, 240);
+    grid-row-start: 1;
+    grid-column-end: 2;     
+    grid-column-start: 1;
+    grid-column-end: -1; */   /*Iniciante
+
+    /* grid-row: 1 / 2; 
+    grid-column: 1 / -1; */  /*Amador*/
+    
+    /* grid-area: 1 / 1 / 2 / -1; Pro */
+}
+
+.caixa2 {
+    background-color: rgb(134, 39, 39);
+    grid-row-start: 2;
+    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* grid-row: 2 / 4;
+    grid-column: 1 / span 2; */
+}
+
+.caixa3 {
+    background-color: rgb(42, 165, 144);
+    grid-row-start: 3;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /* grid-row: 2 / 4;
+    grid-column: 3 / span 2; */
+}
+
+.caixa4 {
+    background-color: rgb(42, 165, 144);
+    grid-row-start: 3;
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    /* grid-row: 2 / 4;
+    grid-column: 3 / span 2; */
+}
+
+
+
+.caixa1,.caixa2, .caixa3 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    
+}
