@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    grid-template-rows: 80px 40px 200px 40px;
+    grid-template-columns: 200px 150px;
+    gap: 5px;
+}
+
+.caixa {
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+#topo {
+    grid-area: 1/1/2/-1;
+}
+
+#menu {
+
+}
+
+#principal {
+
+}
+
+#secundario {
+
+}
+
+#rodape {
+
+}
